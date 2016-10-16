@@ -5,13 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 song1 = Song.create ( { name: "I can get no satisfaction"} )
 song2 = Song.create ( { name: "Ne me quitte pas"} )
 song3 = Song.create  ( { name: "Kiss"} )
 
-artist1 = Artist.create(name: "Rolling Stones")
-artist2 = Artist.create(name: "Jaques Brell")
-artist3 = Artist.create(name: "Prince")
+artist1 = Artist.create(artist_name: "Rolling Stones")
+artist2 = Artist.create(artist_name: "Jaques Brell")
+artist3 = Artist.create(artist_name: "Prince")
 
 artist1.songs << [song1]
 artist1.save
