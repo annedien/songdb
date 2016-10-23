@@ -1,0 +1,9 @@
+
+<tr class="song" <%= song.new? ? "success" : "" %>" data-id="<%= song.id %>">
+  <td>
+    <input name="song[<%= song.id %>]" id="song-<%= song.id %>" %>>
+  </td>
+  <td>
+    <label for="song-<%= song.id %>"><%= song.name %></label>
+  </td>
+</tr>
