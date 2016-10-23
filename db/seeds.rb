@@ -9,6 +9,7 @@
 song1 = Song.create ( { name: "I can get no satisfaction"} )
 song2 = Song.create ( { name: "Ne me quitte pas"} )
 song3 = Song.create  ( { name: "Kiss"} )
+song4 = Song.create  ( { name: "Purple rain"} )
 
 artist1 = Artist.create(artist_name: "Rolling Stones")
 artist2 = Artist.create(artist_name: "Jaques Brell")
@@ -21,4 +22,7 @@ artist2.songs << [song2]
 artist2.save
 
 artist3.songs << [song3]
+artist3.save
+
+artist3.songs << [song4]
 artist3.save
