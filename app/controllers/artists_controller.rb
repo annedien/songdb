@@ -10,4 +10,13 @@ class ArtistsController < ApplicationController
   def new
   @song = Song.new
   end
+
+
+  def create
+    respond_to do |format|
+      if @song.save
+        format.html { redirect_to todos_path, notice: 'Todo was successfully created.' }
+      end
+    end
+  end
 end
