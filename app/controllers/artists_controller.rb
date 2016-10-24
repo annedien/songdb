@@ -40,6 +40,12 @@ class ArtistsController < ApplicationController
     end
   end
 
+  def by_name
+        @artists = Artist.by_name
+        render action: :index
+      end
+
+
   private
   def song_params
     params.require(:artist).permit(:song)

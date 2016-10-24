@@ -1,4 +1,12 @@
 <h1>Artists</h1>
+<hr>
+
+<div class="filteritem">
+       <%= link_to "Sort by name", by_name_artists_path %>
+</div>
+
+<hr>
+
 
 <% @artists.each do |artist| %>
     <p><%= link_to artist.artist_name, artist_path(artist.id) %></p>

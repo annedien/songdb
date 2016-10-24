@@ -4,4 +4,9 @@ root "artists#index"
   resources :artists
   resources :songs
 
+resources :artists do
+      collection do
+          get :by_name
+      end
+  end
 end
